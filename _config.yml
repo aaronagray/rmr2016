@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Rocky Mountain Ruby 2016
+email: info@rockymntnrby.com
+description: > # this means to ignore newlines until "baseurl:"
+  Rocky Mountain Ruby brings rubyists together in beautiful Boulder Colorado. Over the past six years people have come to learn new techniques, make new friends, and be immersed in the language they love. There are many software conferences around the world with whiz-bang marketing gimmicks in exotic locations, but there is only one Rocky Mountain Ruby. We love this conference, and we know you will too.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://rockymtnruby.com" # the base hostname & protocol for your site
+twitter_username: rockymtnruby
+github_username:  rockymtnruby
+
+# Build settings
+markdown: kramdown

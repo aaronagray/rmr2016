@@ -1,0 +1,12 @@
+.site-header {
+  overflow: hidden;
+  min-height: 200px;
+  margin-bottom: $spacing-unit * 2;
+  padding: $spacing-unit;
+}
+
+.header-buttons {
+  position: absolute;
+  top: $spacing-unit;
+  right: $spacing-unit;
+}

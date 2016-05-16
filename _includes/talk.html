@@ -1,0 +1,12 @@
+<article class="talk">
+  <header class="talk-header">
+    <h3 class="talk-title" id="{{ include.link }}"><a href="http://rockymtnruby.com/#{{ include.link }}">{{ include.title }}</a></h3>
+    <div class="talk-speaker">
+      <a href="https://twitter.com/{{ include.twitter }}">{{ include.speaker }}</a>
+      {% if include.co-speaker %}
+        &amp; <a href="https://twitter.com/{{ include.co-twitter }}">{{ include.co-speaker }}</a>
+      {% endif %}
+    </div>
+  </header>
+  <p class="talk-description">{{ include.description }}</p>
+</article>

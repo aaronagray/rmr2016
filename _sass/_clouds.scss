@@ -1,0 +1,43 @@
+body { margin-top: 20px; background: #1A1A1A; }
+
+.clouds {
+  svg {
+    position: absolute;
+    z-index: -1;
+  }
+
+  @for $i from 0 through 30 {
+    & > svg:nth-child(#{$i})  {
+      left: random(960) + px;
+      top: random(1000) + px;
+    }
+  }
+
+  polygon {
+    stroke-width: 1;
+  }
+}
+
+#cloud1 {
+  animation: bounce1 2s ease-in-out 0s infinite alternate;
+}
+
+#cloud2 {
+  animation: bounce2 3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bounce1 {
+  from {
+    transform: translateY(0px);
+  } to {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes bounce2 {
+  from {
+    transform: translateY(0px);
+  } to {
+    transform: translateY(-6px);
+  }
+}
