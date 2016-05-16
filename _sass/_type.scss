@@ -8,7 +8,10 @@ body {
   color: #99435C;
 }
 
-p {margin-bottom: 1.3rem;}
+p {
+  margin-bottom: 1.3rem;
+  font-weight: lighter;
+}
 
 h1, h2, h3, h4 {
   font-family: 'cubano';

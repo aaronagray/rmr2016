@@ -6,10 +6,13 @@ body { margin-top: 20px; background: #1A1A1A; }
     z-index: -1;
   }
 
-  @for $i from 0 through 30 {
+  @for $i from 0 through 20 {
+    $sec: random(5);
+    $bounce: random(2);
     & > svg:nth-child(#{$i})  {
-      left: random(960) + px;
-      top: random(1000) + px;
+      left: random(1000) + px;
+      top: random(2000) + px;
+      animation: bounce+$bounce $sec+s ease-in-out 0s infinite alternate;
     }
   }
 
@@ -18,12 +21,12 @@ body { margin-top: 20px; background: #1A1A1A; }
   }
 }
 
-#cloud1 {
-  animation: bounce1 2s ease-in-out 0s infinite alternate;
+.cloud1 {
+  opacity: 0.7;
 }
 
-#cloud2 {
-  animation: bounce2 3s ease-in-out 0s infinite alternate;
+.cloud2 {
+  opacity: 0.5;
 }
 
 @keyframes bounce1 {
