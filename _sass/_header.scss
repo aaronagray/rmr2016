@@ -1,3 +1,7 @@
+.logo {
+  float: left;
+}
+
 .site-header {
   overflow: hidden;
   min-height: 200px;
@@ -5,8 +9,11 @@
   padding: $spacing-unit;
 }
 
+.hero {
+  width: 50%;
+  float: right;
+}
+
 .header-buttons {
-  position: absolute;
-  top: $spacing-unit;
-  right: $spacing-unit;
+
 }
