@@ -1,0 +1,25 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+
+}
+main {
+  padding: 0 $spacing-unit / 2;
+
+  @media (max-width: 550px) {
+    padding: 0;
+  }
+}
+
+.has-margins {
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+
+  @media (max-width: 550px) {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+  }
+}

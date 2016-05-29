@@ -1,33 +1,74 @@
-{% include talk.html
-  title='Beyond Good and ORMs'
-  link="well-actually"
-  speaker="Steve Klabnik"
-  description="ORMs such as ActiveRecord or DataMapper are fabulous tools that have improved the speed at which we're able to develop working, shippable products. As DSLs for working with our persistence layers, they've proven their worth time and time again, but at the cost of stunting our collective knowledge about the built-in, powerful features that different databases have to offer. Let's take a look at some of those features."
-  twitter="onealexharms"
-%}
+<section class="talks">
+  {% include section-header.html title="Talks" %}
 
-{% include talk.html
-  title='Cultivating Emotional Safety for Creative Work'
-  link="well-actually"
-  speaker="Alex Harms"
-  description="When we’re feeling stressed, threatened, or unsafe, our bodies help us do a lot of things better. We’re able to run faster, hit harder, yell louder. We are able to notice the slightest movement out of the corner of our eye. Things we do not do better: think creatively, work collaboratively, solve problems. </br> </br> These are very human activities, and they work best in a very human environment. We know that emotional safety is vital to a team's productivity. Let’s talk about what it takes to have psychological safety, and how to get there."
-  twitter="onealexharms"
-%}
+  {% include talk.html
+    title='Lucky: Examining the Barriers to Contributing to Open Source'
+    link="lucky"
+    speaker="Saron Yitbarek"
+    description="The open source community is known for being homogenous. The sexism and racism the plague our industry only reinforce this monoculture, but creating a more diverse open source community requires us to do more than reexamine our culture. Creating a more representative and inclusive open source space requires a better understanding of the assumed context of an open source contributor."
+    twitter="saronyitbarek"
+  %}
 
-{% include talk.html
-  title='“Well, Actually…”'
-  link="well-actually"
-  speaker="Alex Harms"
-  description="Functional programmers have a reputation for being hard to work with. Ever wondered why? … Every interaction is full of choices. Find out which tend to push people away, and which can help people enjoy their interactions. And learn how to tell the difference, even in the heat of the moment."
-  twitter="onealexharms"
-%}
+  {% include talk.html
+    title='Working Compassionately with Legacy Code'
+    link="legacy"
+    speaker="Amar Shah"
+    description="Your code is your partner. It struggles against you, but also alongside you. Your code comes to you as it is, not as you wish it were. Like a real-life partner, it has a history that you’ll never fully know; like a real-life child, it bears your imprint, but it is wild, unruly, and fiercely self-sovereign. You’ll never stop working with code that’s hard to figure out or difficult to change. But this code, this stubborn creature, is entrusted to you. Let go of your anger at the developer who wrote it. Let go of the terror of being blamed for its unforeseeable regressions. Let go--and find joy."
+    twitter="amar47shah"
+  %}
 
-{% include talk.html
-  title='“Well, Actually…”'
-  link="well-actually"
-  speaker="Alex Harms"
-  description="Functional programmers have a reputation for being hard to work with. Ever wondered why? … Every interaction is full of choices. Find out which tend to push people away, and which can help people enjoy their interactions. And learn how to tell the difference, even in the heat of the moment."
-  twitter="onealexharms"
-%}
+  {% include talk.html
+    title='Beyond Good and ORMs'
+    link="orms"
+    speaker="Kerri Miller"
+    description="ORMs such as ActiveRecord or DataMapper are fabulous tools that have improved the speed at which we're able to develop working, shippable products. As DSLs for working with our persistence layers, they've proven their worth time and time again, but at the cost of stunting our collective knowledge about the built-in, powerful features that different databases have to offer. Let's take a look at some of those features."
+    twitter="kerrizor"
+  %}
 
-{% include talk-holder.html %}
+  {% include talk.html
+    title='Cultivating Emotional Safety for Creative Work'
+    link="cultivating-emotional-safety"
+    speaker="Alex Harms"
+    description="When we’re feeling stressed, threatened, or unsafe, our bodies help us do a lot of things better. We’re able to run faster, hit harder, yell louder. We are able to notice the slightest movement out of the corner of our eye. Things we do not do better: think creatively, work collaboratively, solve problems. </br> </br> These are very human activities, and they work best in a very human environment. We know that emotional safety is vital to a team's productivity. Let’s talk about what it takes to have psychological safety, and how to get there."
+    twitter="onealexharms"
+  %}
+
+  {% include talk.html
+    title='YesSQL, beyond ActiveRecord'
+    link="well-actually"
+    speaker="Rocio Delgado"
+    description="As RoR applications get more complex, we find ourselves querying the same data in different ways, having to keep track of unintentional duplicate queries and optimizing for N+1's, missing indexes, extra indexes. This talk is intended to show how do we keep on top of these situations and create a culture of performance to keep delivering a product that is fast and highly available."
+    twitter="rokkzy"
+  %}
+
+  {% include talk-holder.html
+    speaker="Coraline Ada Ehmke"
+    twitter="CoralineAda"
+  %}
+
+  {% include talk-holder.html
+    speaker="KINSEY ANN DURHAM"
+    twitter="KinseyAnnDurham"
+  %}
+
+  {% include talk-holder.html
+    speaker="Shelby Switzer"
+    twitter="switzerly"
+  %}
+
+  {% include talk-holder.html
+    speaker="Aaron Gray"
+    twitter="aaronagray"
+  %}
+
+  {% include talk-holder.html
+    speaker="Miriam Suzanne"
+    twitter="mirisuzanne"
+  %}
+</section>
+{% include cta.html
+  title="Submit Your Talk"
+  copy="CFPs will be open and considered until June 15th, so be sure to send your talk ideas before then."
+  button-text="Submit Talk"
+  button-url="https://rockymtnruby2016.busyconf.com/proposals/new"
+%}

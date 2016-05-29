@@ -1,0 +1,18 @@
+.site-footer {
+  overflow: hidden;
+  padding-bottom: $spacing-unit;
+}
+
+.footer-detail {
+  float: left;
+  width: 25%;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    float: none;
+  }
+}
+
+.site-footer .site-nav-item {
+  display: block;
+}

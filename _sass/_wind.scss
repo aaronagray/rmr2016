@@ -1,0 +1,16 @@
+@-webkit-keyframes dash {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes dash {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+.wind {
+  stroke-dasharray: 100;
+  opacity: 0.25;
+  -webkit-animation: dash 35s linear infinite;
+  animation: dash 35s linear infinite;
+}

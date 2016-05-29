@@ -1,0 +1,15 @@
+.sponsors {
+  text-align: center;
+}
+
+.sponsor {
+  display: inline-block;
+  padding: $spacing-unit;
+  vertical-align: middle;
+
+  img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    max-width: 100%;
+  }
+}
